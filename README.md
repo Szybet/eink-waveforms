@@ -13,7 +13,7 @@ sudo dd if=<sd card or cloned image file> of=<output file> bs=1 skip=7340042 cou
 ## How to restore?
 For the nia:
 ```
-sudo dd if=<the fd file> of=<sd card or cloned image file> bs=1 seek=7340042 count=582519
+sudo dd if=<the fd file> of=<sd card or cloned image file> bs=1 seek=7340042 count=582519 conv=notrunc
 ```
 I propose that you take a second backup to check if it applied correctly
 ## Other informations
